@@ -12,13 +12,7 @@
         function myFunction() {
           const value = document.getElementById("myInput").value;
           let arr = value.split(' ')
-          let rarr = []
-          for (let i = 0; i < arr.length; i++){
-            if (arr[i] % 3 === 0) {
-                rarr.push(arr[i])
-            }
-          }
-          document.getElementById("demo").innerHTML = rarr;
+          document.getElementById("demo").innerHTML = arr.filter(item => item % 3 == 0);
         }
     </script>
  </body> 
