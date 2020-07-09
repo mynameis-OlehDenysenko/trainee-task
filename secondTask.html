@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>First task</title>
+   <meta charset="utf-8">
+ </head>
+ <body>
+  <p>Введите имя</p>
+  <input id="myInput" onchange="myFunction()">
+  <p id="demo"></p>
+    <script type="text/javascript">
+        function myFunction() {
+          var value = document.getElementById("myInput").value;
+          if (value === "Вячеслав") {
+            document.getElementById("demo").innerHTML = "Привет Вячеслав";
+          } else {
+            document.getElementById("demo").innerHTML = "Нет такого имени";
+          }
+        }
+    </script>
+ </body> 
+</html>
