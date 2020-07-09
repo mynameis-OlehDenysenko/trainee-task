@@ -11,8 +11,10 @@
     <script type="text/javascript">
         function myFunction() {
           const value = document.getElementById("myInput").value;
-          if (parseInt(value) > 7) {
+          if (Number(value) > 7) {
             document.getElementById("demo").innerHTML = "Привет";
+          } else {
+            document.getElementById("demo").innerHTML = "";
           }
         }
     </script>
