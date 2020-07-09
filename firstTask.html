@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>First task</title>
+   <meta charset="utf-8">
+ </head>
+ <body>
+  <input id="myInput" onchange="myFunction()">
+  <p id="demo"></p>
+    <script type="text/javascript">
+        function myFunction() {
+          var value = document.getElementById("myInput").value;
+          if (value>7) {
+            document.getElementById("demo").innerHTML = "Привет";
+          }
+        }
+    </script>
+ </body> 
+</html>
